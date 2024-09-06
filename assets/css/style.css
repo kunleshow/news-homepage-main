@@ -1,29 +1,66 @@
+/* Header styles */
 .mainHeader{
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
 }
 
-.navbar{
-    display: none;
-}
-
+/* Logo styles */
 .logoContainer{
     display: inline-block;
 }
 
+/* Input styles */
+.mainHeader #input{
+    display: none;
+}
+
+/* Hamburger container styles */
 .menuContainer{
-    /* border: 2px solid black; */
     display: inline-block;
     width: 2rem;
-    /* margin-inline-start: auto;
-    margin-inline-end: 1rem; */
 
 }
 
-.menuContainer span.hamburger{
+/* Hamgurger styles */
+
+.menuContainer .hamburger{
+    position: relative;
     display: block;
     background-color: black;
     width: 100%;
     height: 4px;
     margin-bottom: 0.25rem;
 }
+
+.hamburger::before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 4px;
+    margin-top: -0.5rem;
+}
+.hamburger::after{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 4px;
+    margin-top: 0.5rem;
+}
+
+.navbar{
+    display: none;
+}
+
+
+
+/* Active Menu styles */
+.mainHeader #input:checked ~ .navbar{
+    display: block;
+}
+
