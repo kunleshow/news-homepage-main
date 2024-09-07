@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
 /* Header styles */
 .mainHeader{
     display: flex;
@@ -57,10 +64,47 @@
     display: none;
 }
 
-
-
 /* Active Menu styles */
+
 .mainHeader #input:checked ~ .navbar{
     display: block;
 }
+
+/* Section One Styles */
+
+.main .section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main .section .section_one_title{
+font-size: 3rem;
+font-weight: 800;
+margin-block: 0.415rem;
+}
+
+.main #section_one{
+
+}
+
+.main .section .section_one_subtitle{
+color: hsl(236, 13%, 42%);
+font-weight: 400;
+line-height: 1.5em;
+
+}
+
+.section .btn{
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    /* color: hsl(36, 100%, 99%); */
+    font-weight: 800 ;
+    text-transform: uppercase;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    letter-spacing: 0.5em;
+}
+
+
 
